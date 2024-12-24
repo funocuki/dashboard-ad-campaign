@@ -1,0 +1,65 @@
+components:
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- layout_properties: {slot: title}
+  name: title_label
+  properties: {align: left, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: Ad Campaign Metrics, tooltip: '', underline: false, visible: true}
+  type: Label
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'EXMLWF,RYOVVW'}
+    name: small_card_1
+    properties: {background: 'theme:Primary 500', heading: £500 spent, icon: 'fa:credit-card', subheading: £0.64 cost per click}
+    type: form:DashBoard.SmallCard
+  - layout_properties: {full_width_row: true, grid_position: 'EXMLWF,VMYADP'}
+    name: small_card_2
+    properties: {background: 'theme:Secondary 500', heading: 3K Link Clicks, icon: 'fa:mouse-pointer', subheading: 0.16% click through rate}
+    type: form:DashBoard.SmallCard
+  - layout_properties: {full_width_row: true, grid_position: 'EXMLWF,NQIWEV'}
+    name: small_card_3
+    properties: {background: 'theme:Primary 500', heading: 2K Reach, icon: 'fa:users', subheading: 1.74 Frequency Per Person}
+    type: form:DashBoard.SmallCard
+  - layout_properties: {full_width_row: true, grid_position: 'EXMLWF,OETTOF'}
+    name: small_card_4
+    properties: {background: 'theme:Secondary 500', heading: 50 Page Likes, icon: 'fa:thumbs-o-up', subheading: 2k Page Engagements}
+    type: form:DashBoard.SmallCard
+  - components:
+    - layout_properties: {grid_position: 'LQDWGS,ISPXSK'}
+      name: demographic_label
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: 'fa:transgender', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: Demographic, tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {col_xs: null, full_width_row: true, grid_position: 'IUDMCF,IAEHZM', row: CPNONW, width_xs: 4}
+    name: gender_card
+    properties: {col_widths: '{}', role: card}
+    type: ColumnPanel
+  - components:
+    - layout_properties:
+        col_widths: {}
+        grid_position: VVXILR,CURZZF
+      name: location_label
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: 'fa:globe', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: Country, tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {col_xs: null, full_width_row: true, grid_position: 'IUDMCF,ZUCEKC', row: CPNONW, width_xs: 4}
+    name: location_card
+    properties: {background: '', border: '', col_spacing: medium, col_widths: '', foreground: '', role: card, spacing_above: small, spacing_below: small, tooltip: '', visible: true, wrap_on: mobile}
+    type: ColumnPanel
+  - components:
+    - layout_properties:
+        col_widths: {}
+        grid_position: CQJLGK,IGOQHO
+      name: time_label
+      properties: {align: center, background: '', bold: false, border: '', font: '', font_size: null, foreground: '', icon: 'fa:clock-o', icon_align: left, italic: false, role: headline, spacing_above: small, spacing_below: small, text: Time of day, tooltip: '', underline: false, visible: true}
+      type: Label
+    layout_properties: {col_xs: null, full_width_row: true, grid_position: 'IUDMCF,HKRKLD', row: CPNONW, width_xs: 4}
+    name: time_card
+    properties: {role: card}
+    type: ColumnPanel
+  layout_properties: {slot: default}
+  name: column_panel_1
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

@@ -1,0 +1,9 @@
+components:
+- layout_properties:
+    col_widths: {}
+    grid_position: DXGPXP,MZEMSC
+  name: plot
+  properties: {height: '350', interactive: true, spacing_above: small, spacing_below: small, tooltip: '', visible: true}
+  type: Plot
+container: {type: ColumnPanel}
+is_package: true
